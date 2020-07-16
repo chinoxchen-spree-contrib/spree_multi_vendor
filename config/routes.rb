@@ -1,4 +1,7 @@
 Spree::Core::Engine.routes.draw do
+
+  resources :vendors, only: [:index, :show]
+
   namespace :admin do
     resources :vendors do
       collection do
