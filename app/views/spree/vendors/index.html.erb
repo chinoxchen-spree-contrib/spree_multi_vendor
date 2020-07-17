@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <% Spree::Vendor.all.each do |vendor| %>
+      <% @vendors.each do |vendor| %>
         <div class="col-6 col-md-3 text-center mb-3">
           <%= render partial: 'spree/shared/vendors/vendor_card', locals: { vendor: vendor } %>
         </div>
